@@ -1,0 +1,166 @@
+body{
+	overflow-x: hidden;
+}
+
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.menu{
+	display: grid;
+	column-gap: 10px;
+	background-color: #318CE7;
+	grid-template-columns: 58% 4% 11% 8% 8% 7%;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	text-transform: uppercase;
+	line-height: 300%;
+	z-index: 2;
+}
+
+.nombrecompa{
+	text-align: left;
+	margin-left: 20px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: 'Arial';
+}
+
+.nombrecompa, [class*="boton-"]{
+	height: 50px;
+	color: #ffffff;
+	position: relative;
+ 	cursor: default;
+}
+
+[class*="boton-"]{
+ 	right: -100px;
+	text-align: center;
+ 	transition-duration: 0.5s;
+ }
+
+[class*="boton-"]:hover{
+	color: #c0c0c0;
+	text-shadow: 1px 1px 3px #202020;
+}
+
+.carousel1{
+	position: absolute;
+	left: 0px;
+	top: 50px;
+}
+
+.carousel1 img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	max-width: 1360px;
+	max-height: 500px;
+}
+
+.texto{
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 530px;
+	height: 200px;
+	width: 1200px;
+	padding: 10px 50px;
+	box-sizing: border-box;
+	font-size: 18px;
+	align-items: center;
+	margin-left: 80px;
+}
+
+#cajatexto1, #cajatexto2, #cajatexto3, #cajatexto4{
+	display: none;
+}
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	height: 0px;
+	background-color: #505050;
+	text-align: center;
+	color: #ffffff;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-size: 20px;
+	cursor: default;
+	transition: height 0.5s;
+}
+
+.ftab{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	background-color: #505050;
+	color: #fff;
+	padding: 5px;
+	transition: bottom 0.5s;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+.ftab.active{
+	bottom: 100px;
+}
+
+.ftab.active + footer{
+	height: 100px;
+}
+
+[id*="modalimg"] {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  display: inline-block;
+}
+
+[id*="modalimg"]:hover {opacity: 0.7;}
+
+.modaltext{
+	font-size: 20px;
+	line-height: 1.1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 1360px; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbbbbb;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,122 @@
+<!-- Cosas básicas de metadatos -->
+
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+	<title>Agrobombas Bragado</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link href="base.css" rel="stylesheet" style="text/css">
+  	<script src="base.js"></script>
+  	<script>$(function(){
+  				$(".carousel1 img:gt(0)").hide();
+  				setInterval(function(){
+    				$(".carousel1 :first-child").fadeOut()
+    				.next("img").fadeIn()
+    				.end().appendTo(".carousel1")},
+    				3000);
+  				}
+			);
+
+  			jQuery(function($){
+    			$('.ftab').on('click', function(){
+    	    		$(this).toggleClass('active');
+    			});
+			})
+  	</script>
+</head>
+
+<!-- Se supone que en el header colocaría el banner y el menu de navegación -->
+
+<header>
+	<div class="row">
+		<div class="menu">
+			<div class="nombrecompa">Agrobombas Bragado</div><div class="boton-1" onclick="cambio(0)">Home</div><div class="boton-2" onclick="cambio(1)">Quienes somos</div><div class="boton-3" onclick="cambio(2)">Productos</div><div class="boton-4" onclick="cambio(3)">Contacto</div>
+		</div> <!-- Menu -->
+	</div>
+	<div class="carousel1">
+		<img src="prueba1.jpg">
+		<img src="prueba2.jpg">
+		<img src="prueba3.jpg">
+	</div> <!-- Banner -->
+</header>
+
+<!-- Cuerpo principal de la pagina -->
+
+<body>
+	<div class="row">
+		<div class="texto" id="cajatexto0">
+			sdfdsfdsfsdfsd
+<br>
+<br>
+<br>
+		</div> <!-- Sección inicial. Presentaría un resumen simple de la empresa y algunas otras cosas mas. Se hace en base a lo demas -->
+		<div class="texto" id="cajatexto1"><h1>¿Quiénes somos?</h1>
+
+<img src="prueba4.jpg" style="float:left;margin-right:10px">Agro Bombas Bragado es un emprendimiento familiar de amplia trayectoria, dedicado a la venta, asesoramiento y reparación de bombas de agua de diferentes tipos de motovehiculo, anexando el servicio de destapación de cloacas y mantenimiento de desagues pluviales y conexiones, contando con personal idóneo y especializado.
+<br>
+<br>
+Con nuestros productos y servicios proveemos al sector agropecuario y al parque automotor siderurgico que caracterizan el desarrollo económico de nuesta comunidad, ademas de cubrir las necesidades de la comunidad en general.
+
+<br><br><br><br><br><h1>Misión</h1>
+
+<ul><li>Proveer bombas de agua reparadas y pre armadas nuevas de primera calidad, a las que hemos anexado electrobombas centrifugas, periféricas, autocebantes y sumergibles permitiendo cubrir una creciente demanda.</li>
+<br>
+<li>Ofrecer la atencion integral que el cliente necesita garantizando un servicio de calidad y excelencia como pilar fundamental para sostener nuestro trabajo cotidiano, motivandonos a accionar responsablemente hacia el futuro.</li>
+<br>
+<li>Promover valores de trabajo, contancia, confianza y honestidad a través de una propuesta comercial sólida y con permanencia en el mercado.</li></ul>
+
+<h1>Visión</h1>
+
+<ul><li>Nuestra meta emprendedora es consolidarnos como empresa lider de ejemplo a seguir en el mercado por nuestro servicio personalizado, cercano y de calidad.</li>
+<br>
+<li>Llegar a localidades vecinas con mayor frecuencia.</li>
+<br>
+<li>Por un constante crecimiento y proyeccion, incorparando progresivamente recursos humanos con vocacion, que garantice la continuidad del oficio.</li>
+<br>
+<li>Garantizar un ámbito de armonía y eficacia en nuestro equipo de trabajo, obteniendo respeto y confianza de nuestros clientes, actuales y futuros.</li>
+<br>
+<li>El esfuerzo puesto en mejorar y acrecentar nuestro trabajo es una apuesta al progreso colectivo.</li></ul>
+<br>
+<br>
+<br>
+		</div> <!-- Información sobre la empresa. Amadeo tiene que pasarme la info -->
+		<div class="texto" id="cajatexto2">
+			<div style="width:300px;">
+				<img id="modalimg1" src="modalprueba.jpg" onclick="modalopen(1)"><div class="modaltext">Purificadores</div><img id="modalimg2" src="modalprueba.jpg" onclick="modalopen(2)"><div class="modaltext">Bombas de agua</div>
+			</div>
+			<div id="modal-1" class="modal">
+				<span class="close" onclick="modalclose(1)">&times;</span>
+    		</div>
+    		<div id="modal-2" class="modal">
+    			<span class="close" onclick="modalclose(2)">&times;</span>
+    		</div>
+    		<div id="modal-3" class="modal">
+    			<span class="close" onclick="modalclose(3)">&times;</span>
+    		</div>
+<br>
+<br>
+<br>
+		</div> <!-- Información de los productos y servicios ofrecidos. Amadeo tiene que pasarme la info -->
+		<div class="texto" id="cajatexto3">
+<br>
+<br>
+<br>
+		</div> <!-- Formulario de contacto. La idea es que tenga conectividad con Whatsapp para mayor funcionalidad -->
+	</div>
+</body>
+
+<!-- Pie de pagina -->
+
+<span class="ftab">Redes</span>
+<footer>
+	<div class="row">
+		<div class="footer" id="ftr">
+			<div>Nuestras redes</div>
+			<div><a href="https://www.google.com" title="Facebook"><img src="./40x40.png"></a> <a href="https://www.google.com" title="Twitter"><img src="./40x40.png"></a> <a href="https://www.google.com" title="Instagram"><img src="./40x40.png"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>
